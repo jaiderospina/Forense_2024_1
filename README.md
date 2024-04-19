@@ -1,7 +1,5 @@
 # Forense_2024
 
-Repositorio desarrollo curso informática forense digital 2024. 
-
 
 ”Hay ciertas pistas en la escena de un 
 crimen que por su naturaleza nadie puede
