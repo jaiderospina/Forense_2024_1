@@ -9,7 +9,6 @@ que hay que saber buscar”
 
 Dr. James T Reese. 
 
-# ESTO ES...
 ## Material de ayuda
 
 - Repositorio de imágenes forenses "Digital Forensics Tool Testing Images" https://dftt.sourceforge.net/
