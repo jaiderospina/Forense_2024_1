@@ -1,3 +1,3 @@
 ## Créditos.
 
-- Docker-cheat-sheet  https://fernando-herrera.com/
+- Documento Docker-cheat-sheet.pdf   https://fernando-herrera.com/
