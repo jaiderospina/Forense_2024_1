@@ -6,8 +6,9 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 </p>
 
-###  Actividad en Clase.
-## Descrión.
+##  Actividad en Clase.
+
+### Descripción.
 
 En grupos de tres a cuatro integrantes desarrollar el caso propuesto en el documento "Caso de estudio_skram.pdf". 
 
