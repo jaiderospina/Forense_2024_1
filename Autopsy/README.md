@@ -25,3 +25,8 @@ Su misión es analizar un disco flexible recuperado y responder las preguntas fo
 - ¿Qué (si hay) otras escuelas vecinas a Snith Hill Joe Jacobs frecuentan?
 - Para cada archivo, que procesos hizo el sospechoso para enmascarar de otros.
 - ¿Qué procesos (usted como analista) realizó para examinar el contenido completo de cada archivo?
+
+
+## Referencias a material autopsy.
+
+- https://peritoinformaticocolegiado.es/blog/peritaje-informatico-forense-con-autopsy/
