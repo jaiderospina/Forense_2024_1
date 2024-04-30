@@ -1,11 +1,9 @@
 # Forense_2024
 
 ```
-”Hay ciertas pistas en la escena de un 
-crimen que por su naturaleza nadie puede
-recoger o examinar ¿cómo se recoge el
-Amor, la Ira, el Odio, el Miedo…? son cosas
-que hay que saber buscar” 
+”Hay ciertas pistas en la escena de un crimen que por su naturaleza nadie puede recoger o examinar
+¿cómo se recoge el Amor, la Ira, el Odio, el Miedo…?
+son cosas que hay que saber buscar” 
 
 Dr. James T Reese. 
 
