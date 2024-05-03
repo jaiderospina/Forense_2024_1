@@ -1,5 +1,5 @@
 ## Caso de estudio
-![](EJERCICIO FORENSE/Imagen1.png)
+![](Autopsy.png)
 
 Caso Autopsy/EJERCICIO FORENSE
 
