@@ -182,12 +182,12 @@ Se encuentra la contraseña de acceso al archivo protegido en el cual se encuent
 
 3.	¿Que otras Escuela vecinas a Snith Hill Joe Jacobs frecuenta?
 
-1.	Birard High School (D)
-2.	Hull High School (F)
-3.	Key High School (B)
-4.	Leetch High School (C) 
-5.	Richter High School (E)
-6.	Smith Hill High School (A
+Birard High School (D)
+Hull High School (F)
+Key High School (B)
+Leetch High School (C) 
+Richter High School (E)
+Smith Hill High School (A
 
 4.	¿Para cada archivo que procesos se hizo?
 
@@ -195,11 +195,11 @@ Comprimió y protegió (encripto) con contraseña el archivo de secuencia de vis
 
 5.	¿Qué procesos se realizaron para examinar el contenido completo de cada archivo?
 
-1.	Recuperar la información eliminada con Autopsy.
-2.	Se analizo el contenido
-3.	Se identifico la contraseña 
-4.	Se descomprimió el archivo
-5.	Se encontró la evidencia.
+Recuperar la información eliminada con Autopsy.
+Se analizo el contenido
+Se identifico la contraseña 
+Se descomprimió el archivo
+Se encontró la evidencia.
 
 
 
