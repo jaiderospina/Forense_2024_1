@@ -45,7 +45,7 @@ Identificar validez y autenticidad del Archivo objeto de estudio.
 
 1.	Se Comprobó la autenticidad del Archivo mediante MD5 :  
  
-
+![](Imagen2.png)
 
 Se descargo la imagen mediante la aplicación 
 
