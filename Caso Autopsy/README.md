@@ -1,4 +1,4 @@
-## Caso de estudio
+<center>## Caso de estudio</center>
 ![](Autopsy.png)
 
 Inspectores Forenses
