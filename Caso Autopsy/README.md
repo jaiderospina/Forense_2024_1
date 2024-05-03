@@ -49,13 +49,15 @@ Identificar validez y autenticidad del Archivo objeto de estudio.
 
 Se descargo la imagen mediante la aplicación 
 
+![](Imagen3.png)
  
 Se continuó  la investigación mediante el uso de la  aplicación Autopsy:
  
+![](Imagen4.png)
 
 Se creó el Caso con el Nombre CASO JACOBS MARIHUANA
  
-
+![](Imagen5.png)
 
 
 
@@ -67,55 +69,61 @@ Se creó el Caso con el Nombre CASO JACOBS MARIHUANA
 
 Se número el caso como CASO 001 - FORENSE
  
+![](Imagen6.png)
 
 Se generó un nuevo HOST 
  
-
+![](Imagen7.png)
 
 
 
 Se especificó el HOST como: “COMPUTADOR DE JACOBO”
- 
+
+ ![](Imagen8.png)
 
 Se selecciono el tipo de fuente de Datos en “Unallocated Space Image File”
  
+![](Imagen9.png)
 
 Se seleccionó el archivo con la imagen para su análisis:
  
+![](Imagen10.png)
 
 Se instaló y estableció una ruta de localización del archivo “image”
  
-
+![](Imagen11.png)
 
 Se determinó el tipo de búsqueda de forma amplia. 
 
- 
+ ![](Imagen12.png)
 
 
 Se inició el análisis de cada parámetro:
  
-
+![](Imagen13.png)
 
 Se efectúa análisis de COMPUTADOR DE JACOBO y image_1 Host
  
+![](Imagen14.png)
 
 Se encuentran tres archivos que habían sido eliminados:
+
+![](Imagen15.png)
  
 Se analiza el archivo Jimmy_Jungle.doc
  
-
+![](Imagen16.png)
 
 Se encuentra la imagen 
 
- 
-
+![](Imagen17.png)
 
 
 Se analiza el archivo Jimmy Jungle encontrando un texto.
  
+![](Imagen18.png)
 
-
- 
+ ![](Imagen19.png)
 
 TRADUCCION DEL TEXTO
 Amigo, tu marihuana debe ser la mejor: ¡apareció en la portada de la revista High Times! Gracias por enviarme la portada. ¿Qué pones en tu suelo cuando plantas las semillas de marihuana? Al menos sé que lo cultivas tú y no un tipo en Columbia.
@@ -123,23 +131,23 @@ Estos niños me dicen que la marihuana no es adictiva, pero no dejan de comprarm
 Te envié por correo electrónico el horario que estoy usando. Creo que me ayuda a cubrirme y no ser predictivo. Dime que piensas. Para abrirlo usa la misma contraseña que me enviaste antes con ese archivo. Hablaré contigo más tarde.
 Gracias,
 
- 
+ ![](Imagen20.png)
 
 Se analiza el archivo f0000104_Scheduled_Visits.zip mediante “Keyword Search” en búsqueda de la contraseña.
 . 
 
-
+![](Imagen21.png)
 
 
 
 Se logra identificar la contraseña del archivo f0000104_Scheduled_Visits.zip la cual es “goodtimes”
  
-
+![](Imagen22.png)
 
 Se abre el archivo f0000104_Scheduled_Visits.zip mediante la contraseña encontrando la siguiente información:
 
  
-
+![](Imagen23.png)
 
 
 
