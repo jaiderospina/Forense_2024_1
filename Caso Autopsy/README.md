@@ -176,6 +176,8 @@ La dirección es 626 Jungle Ave, Apt 2, Jungle, NY 11111.
 
 Se encuentra la contraseña de acceso al archivo protegido en el cual se encuentra la contraseña.    “goodtimes”
 
+
+![](Imagen24.png)
  
 
 3.	¿Que otras Escuela vecinas a Snith Hill Joe Jacobs frecuenta?
