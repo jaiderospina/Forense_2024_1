@@ -1,5 +1,5 @@
 ## Caso de estudio
-![](Autopsy.png)
+![Albeto Mera](Autopsy.png)
 
 Caso Autopsy/EJERCICIO FORENSE
 
