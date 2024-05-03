@@ -1,7 +1,6 @@
 ## Caso de estudio
-![Albeto Mera](Autopsy.png)
+![](Autopsy.png)
 
-Caso Autopsy/EJERCICIO FORENSE
 
 El escenario es: Joe Jacobs, 28, fue arrestado ayer acusado de vender drogas ilegales a estudiantes de secundaria. Un oficial de policía local se hizo pasar como un estudiante de secundaria fue abordado por Jacobs en el estacionamiento de Smith Hill High School. Jacobs preguntó al policía encubierto si le gustaría comprar marihuana. Antes de que el policía encubierto pudiera responder, Jacobs sacó del bolsillo y se la mostró al agente.  Jacobs le dijo al Jacobs le dijo al agente: "¡Mira esto, los colombianos no podrían cultivarla mejor! Mi proveedor no sólo me la vende directamente a mí, sino que la cultiva él mismo". 
 Jacobs ha sido visto en numerosas ocasiones pasando el rato en varios locales de alta en los aparcamientos de varios institutos locales sobre las 14:30, la hora a la que suelen acabar las clases. Funcionarios de varias escuelas secundarias han llamado a la policía en relación con la presencia de Jacobs en sus escuelas y observaron un aumento en el consumo de drogas entre los estudiantes, desde su llegada.
@@ -41,7 +40,7 @@ Identificar validez y autenticidad del Archivo objeto de estudio.
 1.	DESCARGAR LA IMEGEN ZIP
 2.	VERIFICAR EL HASH CON MDsum image.zip
 
-
+![](Imagen1.png)
  
 
 1.	Se Comprobó la autenticidad del Archivo mediante MD5 :  
