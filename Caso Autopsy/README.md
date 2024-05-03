@@ -38,6 +38,7 @@ Identificar validez y autenticidad del Archivo objeto de estudio.
 1.	DESCARGAR LA IMEGEN ZIP
 2.	VERIFICAR EL HASH CON MDsum image.zip
 
+
  
 
 1.	Se Comprobó la autenticidad del Archivo mediante MD5 :  
