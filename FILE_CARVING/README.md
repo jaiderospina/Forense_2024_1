@@ -61,24 +61,34 @@ Scalpel soporta formatos de disco desde:
 
 Ejemplo de uso.
 $ sudo gedit /etc/scalpel/scalpel.conf
+
 Podemos ver que en el fichero está explicado el funcionamiento por RegEx (Expresiones Regulares).
+
 Imaginemos que queremos recuperar un fichero .html que borramos accidentalmente, en la línea 162 tenemos ese ejemplo de fichero (será bueno que os leais estos ejemplos para entender el funcionamiento), en nuestro caso iremos hasta esa línea y quitaremos el comentario (simplemente bastará con eliminar el caracter # que está al comienzo de la misma).
+
 Después de guardar las modificaciones volvemos a la consola.
 Lo siguiente será indicarle al programa que los ficheros .html que hemos eliminado de nuestro disco se coloquen en un carpeta llamada “html_recovered”, y recuperaremos los datos que se encontraran en la partición /dev/sda5 (esto como repetimos es un ejemplo, podéis guardar los datos recuperados en la carpeta que queráis y buscarlos donde sea oportuno), para lo que escribiremos el comando:
+
+```
 $ sudo scalpel /dev/sda5 -o html_recovered
+```
+
 Después de un tiempo de funcionamiento, la duración dependerá del tamaño de la partición, tendremos los resultados.
 En dicha carpeta existirán multitud de archivos recuperados, por lo que buscar nuestro archivo seguirá siendo como buscar una aguja dentro de un pajar. Para eliminar gran parte de los resultados, que no nos atañen buscaremos, solo por aquellos en los que nuestro usuario ha tenido algo que ver, para esto escribiremos en consola (sustituyendo USER por nuestro nombre de usuario):
+
+```
 $ sudo chown -R USER.USER html_recovered
+```
+
 Después de un poco de tiempo tendremos listos los resultados de esta criba, en la que ya nos será más sencillo localizar el archivo borrado.
 
 
-Reto 1 en clase.
+## Reto 1 en clase.
 •	Instalar scalpel en Windows.
-Reto 2.
+## Reto 2.
 •	Recuperar datos desde una USB previamente borrados.
 
 Una vez comprendido, procedemos a descargar desde el repositorio en Github y una herramienta que será util.
-
 
 •	Repositorio escalpel
 •	Herramienta Ftk
