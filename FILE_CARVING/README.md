@@ -54,10 +54,10 @@ Scalpel is done, files carved = 0, elapsed = 648 seconds.
 
 Formatos soportados
 Scalpel soporta formatos de disco desde:
-	FAT
-	NTFS
-	ext2
-	particiones sin formato
+- FAT
+- NTFS
+- ext2
+- particiones sin formato
 
 Ejemplo de uso.
 $ sudo gedit /etc/scalpel/scalpel.conf
@@ -115,10 +115,9 @@ Visualizando la ayuda, notaremos que la sintaxis es: scalpel -opcion1 -opcion2 i
 
 Algunas de las opciones mas relevantes:
 
-•	-c : Sirve para elegir el archivo de configuración. (de serie es scalpel.conf)
-•	-o : Sirve para elegir la carpeta donde se mandará la información. (de serie es scalpel-output)
-•	-v : Sirve para entrar en el verbose mode.
-
+- -c : Sirve para elegir el archivo de configuración. (de serie es scalpel.conf)
+- -o : Sirve para elegir la carpeta donde se mandará la información. (de serie es scalpel-output)
+- -v : Sirve para entrar en el verbose mode.
 
 El archivo de configuración predeterminado trae muchas opciones para buscar gran cantidad de ficheros diferentes, solo tendríamos que ir a dicha sección y borrar ‘#’ para que dejase de ser un comentario.
 
