@@ -7,3 +7,5 @@
 -- https://github.com/Psmths/windows-forensic-artifacts?tab=readme-ov-file#execution---command-line-options
 - Microsoft-Analyzer-Suite
 -- https://github.com/evild3ad/Microsoft-Analyzer-Suite
+  - https://github.com/Smithech/FOGAD/tree/main
+  
