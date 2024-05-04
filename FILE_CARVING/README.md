@@ -134,11 +134,11 @@ En la carpeta que hemos pasado como parámetro habrá varias carpetas con los di
 
 Referencias:
 
-https://github.com/sleuthkit/scalpel
-https://youtu.be/4OkushGbBaU?si=XNCmwyaDMqcSdf6L
-https://youtu.be/0BcH2CRIVv4?si=dsKw5rEJ5KeEJtiS
-https://merchandlinux.wordpress.com/2009/03/31/recuperar-ficheros-en-linux/
-https://www.howtoforge.com/recover-deleted-files-with-scalpel
+- https://github.com/sleuthkit/scalpel
+- https://youtu.be/4OkushGbBaU?si=XNCmwyaDMqcSdf6L
+- https://youtu.be/0BcH2CRIVv4?si=dsKw5rEJ5KeEJtiS
+- https://merchandlinux.wordpress.com/2009/03/31/recuperar-ficheros-en-linux/
+- https://www.howtoforge.com/recover-deleted-files-with-scalpel
 
 
 
