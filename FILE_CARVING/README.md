@@ -1,45 +1,4 @@
-VUCE
-
-Circular 004 de 2024.
-
-Prohibida importacion ---:.  Min Minas
-Firma de contigencia
-CReación de usuarios (entidades autonomas) --.  que roles tenemos?
-Guias TENEMOS???
-nOTA MARGINAL VALIDACION (POR CAJA DE TEXTO)
-
-
-cOMO VALIDAR LAS QUE SON REAALMENTE DE PROHIBIDA EXPORTACION vs Nota margina //  subpartidas
-
-Script de revision de prohibida importación con su decreto y norma que lo sustenta.
-
-
-
-
-Investigación --->  Observaciones
-
-V2  Excel
-
-Mejoras en siguiente versión. 
-
-REPORTES ????
-
-VUCE  
-SIVEEIC  (Sistema Integrado de de Vigilancia Estrátegica e IntelienciaCompetitiva)
-
-script python migracion
-
-RAIS  ()
-
-
-
-Auditoria Servicio geologico
-
-Reuni
-
-
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+<a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -47,67 +6,125 @@ Reuni
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# scalpel
 
-## Installation
+Programa en linea de comandos para la recuperación de archivos. Esta herramienta es parte de Seulkit que se integra con Autopsy
+Su técnica de recuperación es el  File Carving (lee los encabezados, pies de página y estructura interna de los archivos, accediendo a la base de datos de bloques). Para ello identifica una secuencia de caracteres que algunos archivos utilizan en su comienzo y en su final. Por ejemplo, un archivo JPEG utiliza la secuencia «\xff\xd8\xff\xe0\x00\x10» en su comienzo, y la secuencia «\xff\xd9» en su final.
 
-```bash
-$ pnpm install
+
+# Sintaxis:
+
+```
+  scalpel [opciones] [dispositivo-de-entrada] -o [directorio-de-salida]
 ```
 
-## Running the app
+Antes de ejecutarlo se debe quitar el comentario a las extensiones que queramos recuperar en su archivo de configuración, que, por lo general está en /etc/scalpel/scalpel.conf. 
 
-```bash
-# development
-$ pnpm run start
+También la carpeta destino debe estar vacia.
 
-# watch mode
-$ pnpm run start:dev
+Ejemplo:
 
-# production mode
-$ pnpm run start:prod
+En el siguiente ejemplo se ejecuta sobre la unidad /dev/sdc la cual esta dañada y se le solicita que guarde lo recuperado en la carpeta prueba
+
+```
+# scalpel /dev/sdc -o prueba
+Scalpel version 1.60
+Written by Golden G. Richard III, based on Foremost 0.69.
+
+Opening target "/dev/sdc"
+
+Image file pass 1/2.
+Allocating work queues...
+Work queues allocation complete. Building carve lists...
+Carve lists built.  Workload:
+jpg with header "\xff\xd8\xff\xe0\x00\x10" and footer "\xff\xd9" --> 0 files
+Carving files from image.
+Image file pass 2/2.
+/dev/sdc: 100.0% |**************************************|   74.6 GB    00:00 ETAProcessing of image file complete. Cleaning up...
+Done.
+Scalpel is done, files carved = 0, elapsed = 648 seconds.
 ```
 
-## Test
+Formatos soportados
+Scalpel soporta formatos de disco desde:
+	FAT
+	NTFS
+	ext2
+	particiones sin formato
 
-```bash
-# unit tests
-$ pnpm run test
+Ejemplo de uso.
+$ sudo gedit /etc/scalpel/scalpel.conf
+Podemos ver que en el fichero está explicado el funcionamiento por RegEx (Expresiones Regulares).
+Imaginemos que queremos recuperar un fichero .html que borramos accidentalmente, en la línea 162 tenemos ese ejemplo de fichero (será bueno que os leais estos ejemplos para entender el funcionamiento), en nuestro caso iremos hasta esa línea y quitaremos el comentario (simplemente bastará con eliminar el caracter # que está al comienzo de la misma).
+Después de guardar las modificaciones volvemos a la consola.
+Lo siguiente será indicarle al programa que los ficheros .html que hemos eliminado de nuestro disco se coloquen en un carpeta llamada “html_recovered”, y recuperaremos los datos que se encontraran en la partición /dev/sda5 (esto como repetimos es un ejemplo, podéis guardar los datos recuperados en la carpeta que queráis y buscarlos donde sea oportuno), para lo que escribiremos el comando:
+$ sudo scalpel /dev/sda5 -o html_recovered
+Después de un tiempo de funcionamiento, la duración dependerá del tamaño de la partición, tendremos los resultados.
+En dicha carpeta existirán multitud de archivos recuperados, por lo que buscar nuestro archivo seguirá siendo como buscar una aguja dentro de un pajar. Para eliminar gran parte de los resultados, que no nos atañen buscaremos, solo por aquellos en los que nuestro usuario ha tenido algo que ver, para esto escribiremos en consola (sustituyendo USER por nuestro nombre de usuario):
+$ sudo chown -R USER.USER html_recovered
+Después de un poco de tiempo tendremos listos los resultados de esta criba, en la que ya nos será más sencillo localizar el archivo borrado.
 
-# e2e tests
-$ pnpm run test:e2e
 
-# test coverage
-$ pnpm run test:cov
-```
+Reto 1 en clase.
+•	Instalar scalpel en Windows.
+Reto 2.
+•	Recuperar datos desde una USB previamente borrados.
 
-## Support
+Una vez comprendido, procedemos a descargar desde el repositorio en Github y una herramienta que será util.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+•	Repositorio escalpel
+•	Herramienta Ftk
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
+Scalpel es una herramienta para utilizar en Linux como Windows, la única diferencia es que bajo Windows no puede analizar el disco, si no que debe analizar una imagen del disco, para esto, será util FTK.
+Para la presente práctica, obtendremos la información de un pendrive de 2GB.
 
-Nest is [MIT licensed](LICENSE).
+Creando una imagen con FTK
+
+- Lo primero que haremos es pulsar el botón de “add evidence item” y elegiremos “Logical Drive”.
+
+- Elegimos la unidad.
+ 
+- Luego, haremos clic derecho a la unidad y seleccionamos “Export Disk Image”
+
+- Configuramos donde se exportará la imagen.
+
+Al concluir los pasos anteriores, estamos en condiciones de crear la imagen, solo debemos hacer clic en el boton “Start”.
+
+Obteniendo información con Scalpel
+Estamos en condiciones de buscar la información, lo primero que haremos será comprobar la ayuda, haciendo:
+Visualizando la ayuda, notaremos que la sintaxis es: scalpel -opcion1 -opcion2 imagen
+
+Algunas de las opciones mas relevantes:
+
+•	-c : Sirve para elegir el archivo de configuración. (de serie es scalpel.conf)
+•	-o : Sirve para elegir la carpeta donde se mandará la información. (de serie es scalpel-output)
+•	-v : Sirve para entrar en el verbose mode.
+
+
+El archivo de configuración predeterminado trae muchas opciones para buscar gran cantidad de ficheros diferentes, solo tendríamos que ir a dicha sección y borrar ‘#’ para que dejase de ser un comentario.
+
+Para añadir una nueva regla debemos seguir la siguiente forma: ‘extension’ y ‘tamaño’ ‘header’ ‘EOF’
+Podemos buscar el header y el EOF de cada tipo de archivo por internet, para esta práctica se hará un archivo de configuración que saque todas las imagenes.
+
+Y lanzamos el programa hacia la imagen:
+
+Una vez ejecutado comenzará a buscar las imagenes y enviará a la carpeta que hemos indicado.
+
+En la carpeta que hemos pasado como parámetro habrá varias carpetas con los diferentes archivos que ha recuperado y por fin hemos encontrado aquello que estabamos buscando.
+
+
+Referencias:
+
+https://github.com/sleuthkit/scalpel
+https://youtu.be/4OkushGbBaU?si=XNCmwyaDMqcSdf6L
+https://youtu.be/0BcH2CRIVv4?si=dsKw5rEJ5KeEJtiS
+https://merchandlinux.wordpress.com/2009/03/31/recuperar-ficheros-en-linux/
+https://www.howtoforge.com/recover-deleted-files-with-scalpel
+
+
+
+
