@@ -10,8 +10,13 @@
 
 # scalpel
 
-Programa en linea de comandos para la recuperación de archivos. Esta herramienta es parte de Seulkit que se integra con Autopsy
-Su técnica de recuperación es el  File Carving (lee los encabezados, pies de página y estructura interna de los archivos, accediendo a la base de datos de bloques). Para ello identifica una secuencia de caracteres que algunos archivos utilizan en su comienzo y en su final. Por ejemplo, un archivo JPEG utiliza la secuencia «\xff\xd8\xff\xe0\x00\x10» en su comienzo, y la secuencia «\xff\xd9» en su final.
+Programa en linea de comandos para la recuperación de archivos. 
+
+Esta herramienta es parte de Seulkit que se integra con Autopsy
+
+Su técnica de recuperación es el  File Carving (lee los encabezados, pies de página y estructura interna de los archivos, accediendo a la base de datos de bloques). Para ello identifica una secuencia de caracteres que algunos archivos utilizan en su comienzo y en su final. 
+
+- Por ejemplo, un archivo JPEG utiliza la secuencia «\xff\xd8\xff\xe0\x00\x10» en su comienzo, y la secuencia «\xff\xd9» en su final.
 
 
 # Sintaxis:
