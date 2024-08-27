@@ -30,3 +30,4 @@ Dr. James T Reese.
 - Markdown 2.   https://markdown.es/sintaxis-markdown/
 - Docker https://www.docker.com/products/docker-hub/
 - Docker School   https://www.w3schools.io/docker-tutorials/
+- FOCA  https://telefonicatech.com/blog/como-analizar-documentos-con-foca
