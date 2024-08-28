@@ -264,8 +264,4 @@ Cada estudiante debe documentar:
 - Una captura de pantalla o salida de terminal que muestre el resultado de cada comando.
 - Una breve explicación de lo que hace cada comando y los resultados obtenidos.
 
-### **Conclusión del Laboratorio:**
-
-Al completar este laboratorio, los estudiantes habrán adquirido experiencia práctica con los comandos fundamentales de administración de sistemas en Kali Linux, incluyendo la manipulación de archivos, la búsqueda avanzada, la gestión de procesos y servicios, y la administración de unidades de almacenamiento.
-
 ---
