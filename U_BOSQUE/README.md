@@ -1,4 +1,166 @@
+## **Manual de Comandos para Administración de Kali Linux desde la Terminal**
+
+### **1. Navegación y Manipulación de Archivos y Directorios**
+
+- **`ls`**  
+  Lista los archivos y directorios en el directorio actual.  
+  - **`ls -l`**: Muestra una lista detallada con permisos, propietario, tamaño y fecha de modificación.  
+  - **`ls -a`**: Incluye archivos ocultos (que comienzan con `.`).
+
+- **`cd <directorio>`**  
+  Cambia al directorio especificado.  
+
+  - **`cd ..`**: Retrocede un nivel en la jerarquía de directorios.  
+  - **`cd ~`**: Cambia al directorio del usuario actual.
+
+- **`mkdir <nombre_directorio>`**  
+  Crea un nuevo directorio con el nombre especificado.  
+  - **`mkdir -p /ruta/completa/del/directorio`**: Crea un directorio junto con los directorios padre necesarios.
+
+- **`touch <nombre_archivo>`**  
+  Crea un nuevo archivo vacío con el nombre especificado o actualiza la fecha de modificación si el archivo ya existe.
+
+- **`cp <origen> <destino>`**  
+  Copia un archivo o directorio de origen al destino.  
+  - **`cp -r <directorio_origen> <directorio_destino>`**: Copia recursivamente todo el contenido de un directorio.
+
+- **`mv <origen> <destino>`**  
+  Mueve o renombra archivos o directorios.  
+  - **`mv archivo.txt /ruta/nueva/`**: Mueve `archivo.txt` al nuevo directorio.  
+  - **`mv archivo.txt nuevo_nombre.txt`**: Renombra `archivo.txt` a `nuevo_nombre.txt`.
+
+- **`rm <archivo>`**  
+  Elimina el archivo especificado.  
+  - **`rm -r <directorio>`**: Elimina de forma recursiva un directorio y su contenido.  
+  - **`rm -i <archivo>`**: Pide confirmación antes de eliminar.
+
+### **2. Inspección y Montaje de Unidades**
+
+- **`df -h`**  
+  Muestra el uso del espacio en disco de todas las particiones de forma legible para humanos.
+
+- **`du -sh <directorio>`**  
+  Muestra el tamaño total de un directorio de forma resumida.
+
+- **`mount <dispositivo> <punto_de_montaje>`**  
+  Monta un dispositivo o una partición en el sistema de archivos.  
+  - **`mount /dev/sdb1 /mnt/usb`**: Monta la partición `/dev/sdb1` en `/mnt/usb`.
+
+- **`umount <punto_de_montaje>`**  
+  Desmonta un dispositivo o una partición del sistema de archivos.  
+  - **`umount /mnt/usb`**: Desmonta la partición montada en `/mnt/usb`.
+
+- **`blkid`**  
+  Muestra información sobre todos los dispositivos de bloques conectados, como identificadores UUID y tipo de sistema de archivos.
+
+- **`fdisk -l`**  
+  Lista todas las particiones y detalles de los discos conectados.
+
+### **3. Búsquedas Avanzadas**
+
+- **`find <directorio> -name "<patrón>"`**  
+  Busca archivos o directorios por nombre.  
+  - **`find /home -name "*.txt"`**: Busca todos los archivos `.txt` en el directorio `/home`.
+
+- **`grep "<patrón>" <archivo>`**  
+  Busca texto dentro de un archivo.  
+  - **`grep "error" /var/log/syslog`**: Busca la palabra "error" en el archivo `/var/log/syslog`.
+
+- **`locate <archivo>`**  
+  Encuentra archivos en el sistema utilizando una base de datos actualizada.  
+  - **`locate archivo.txt`**: Busca rápidamente `archivo.txt` en todo el sistema.
+
+### **4. Administración de Procesos y Servicios**
+
+- **`ps aux`**  
+  Muestra todos los procesos en ejecución junto con sus detalles.
+
+- **`top`**  
+  Muestra en tiempo real los procesos más activos en el sistema.
+
+- **`kill <PID>`**  
+  Termina un proceso por su ID de proceso (PID).  
+  - **`kill -9 <PID>`**: Fuerza la terminación de un proceso.
+
+- **`service <servicio> start|stop|restart|status`**  
+  Administra servicios del sistema.  
+  - **`service apache2 start`**: Inicia el servicio de Apache.  
+  - **`service ssh status`**: Verifica el estado del servicio SSH.
+
+### **5. Gestión de Usuarios y Permisos**
+
+- **`adduser <nombre_usuario>`**  
+  Crea un nuevo usuario en el sistema.
+
+- **`deluser <nombre_usuario>`**  
+  Elimina un usuario del sistema.
+
+- **`passwd <nombre_usuario>`**  
+  Cambia la contraseña de un usuario.
+
+- **`chmod <permisos> <archivo>`**  
+  Cambia los permisos de un archivo o directorio.  
+  - **`chmod 755 script.sh`**: Otorga permisos de lectura y ejecución a todos, y permisos de escritura al propietario.
+
+- **`chown <propietario>:<grupo> <archivo>`**  
+  Cambia el propietario y el grupo de un archivo o directorio.
+
+### **6. Administración del Sistema**
+
+- **`apt update`**  
+  Actualiza la lista de paquetes disponibles en los repositorios.
+
+- **`apt upgrade`**  
+  Actualiza todos los paquetes instalados a sus últimas versiones disponibles.
+
+- **`apt install <paquete>`**  
+  Instala un nuevo paquete desde los repositorios de APT.  
+  - **`apt install nmap`**: Instala la herramienta `nmap`.
+
+- **`apt remove <paquete>`**  
+  Elimina un paquete instalado del sistema.  
+  - **`apt remove nmap`**: Elimina la herramienta `nmap`.
+
+### **7. Red y Conexiones**
+
+- **`ifconfig`**  
+  Muestra la configuración de todas las interfaces de red (requiere privilegios de administrador).
+
+- **`ping <dominio/IP>`**  
+  Envía paquetes ICMP a un host para verificar la conectividad de red.  
+  - **`ping google.com`**: Verifica la conectividad con Google.
+
+- **`netstat -tuln`**  
+  Muestra todas las conexiones de red activas y puertos de escucha.
+
+- **`ssh <usuario>@<host>`**  
+  Inicia una sesión SSH en un host remoto.  
+  - **`ssh user@192.168.1.100`**: Conecta al usuario `user` en el host `192.168.1.100`.
+
+### **8. Compresión y Descompresión de Archivos**
+
+- **`tar -cvf archivo.tar <directorio>`**  
+  Crea un archivo comprimido `.tar` del directorio especificado.
+
+- **`tar -xvf archivo.tar`**  
+  Extrae el contenido de un archivo comprimido `.tar`.
+
+- **`gzip <archivo>`**  
+  Comprime un archivo usando `gzip`.
+
+- **`gunzip <archivo.gz>`**  
+  Descomprime un archivo `.gz`.
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
 ### **Laboratorio de Administración de Kali Linux desde la Terminal**
+
+En grupos de dos  o tres integrantes realizar:
 
 #### **Objetivo del Laboratorio:**
 Este laboratorio está diseñado para que los estudiantes se familiaricen con los comandos básicos y avanzados de administración de Kali Linux mediante ejercicios prácticos. Cada actividad tiene como objetivo desarrollar habilidades específicas de manejo de archivos, búsquedas, administración de unidades, y gestión de procesos en un entorno Linux.
